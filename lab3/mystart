@@ -1,0 +1,28 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          mystart
+# Required-Start:    $local_fs $remote_fs $network $named $time $syslog
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: mystart script
+### END INIT INFO
+
+#echo `date` >> /tmp/reboot.log
+#LD_LIBRARY_PATH=/run/media/mmcblk1p1 /run/media/mmcblk1p1/demo
+
+case "$1" in
+  start)
+#    echo `date` >> /tmp/reboot.log
+    LD_LIBRARY_PATH=/run/media/mmcblk1p1 /run/media/mmcblk1p1/demo
+    ;;
+  stop)
+    echo "Stopping script"
+    ;;
+  *)
+    echo "Usage: /etc/init.d/mystart {start|stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
