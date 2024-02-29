@@ -7,6 +7,7 @@
 | lab4 | Display through HDMI and make the electronic scroll board  |
 | lab5 | Madplay mp3 player on Linux |
 | project | Object Detection |
+| past final | Human face recognizion |
 
 # Environment Setting
 - Operating System: Ubuntu 14.04 <br>
